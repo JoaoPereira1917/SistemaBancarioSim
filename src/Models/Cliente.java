@@ -1,12 +1,19 @@
 package Models;
 
 public class Cliente {
-    int nu = 2;
-    public void flintosn()
-    {
-        if(nu ==2 ){System.out.println(2222);}
-        //teste
+    private String nome;
+    private int cpf;
 
-
+    public Cliente(String nome, int cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
     }
+    public String getNome() {
+        return nome;
+    }
+
+    public int getCpf() {
+        return cpf;
+    }
+
 }
