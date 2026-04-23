@@ -51,7 +51,7 @@ public class Main {
                 }
 
             } else if (opcao == 2) {
-                System.out.println("\n--- REALIZAR DEPÓSITO ---");
+                System.out.println("\n-- REALIZAR DEPÓSITO ---");
                 System.out.print("Número da conta: ");
                 int numero = scanner.nextInt();
                 System.out.print("Valor: R$ ");
@@ -67,7 +67,7 @@ public class Main {
                 repository.sacar(numero, valor);
 
             } else if (opcao == 4) {
-                System.out.println("\n--- REALIZAR TRANSFERÊNCIA ---");
+                System.out.println("\n--- REALIZAR TRANSFERÊNCIA--");
                 System.out.print("Conta de origem: ");
                 int origem = scanner.nextInt();
                 System.out.print("Conta de destino: ");
@@ -75,18 +75,19 @@ public class Main {
                 System.out.print("Valor: R$ ");
                 float valor = scanner.nextFloat();
                 repository.transferir(origem, destino, valor);
-            } else if (opcao == 5) {
+            }
+            else if (opcao == 5) {
                 System.out.println("\n--- LISTA DE CONTAS ---");
                 repository.listarContas();
 
             } else if (opcao == 6) {
-                System.out.println("\n--- CÁLCULO DE TRIBUTOS ---");
+                System.out.println("\n--- CÁLCULO DE TRIBUTOS---");
                 repository.CalcularTributos();
 
             } else if (opcao == 7) {
-                System.out.println("Encerrando...");
+                System.out.println("Encerrando..");
             } else {
-                System.out.println("Opção inválida!");
+                System.out.println("Opção inválida");
             }
 
         } while (opcao != 7);

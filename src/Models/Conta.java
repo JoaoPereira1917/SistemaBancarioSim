@@ -33,7 +33,7 @@ public abstract class Conta {
 
     @Override
     public String toString(){
-        return ("Numero da conta: " + numero +"Tipo: "+ tipoDeConta + "Cliente: " + cliente.getNome()+ "Saldo: " + saldo);
+        return ("Numero da conta: " + numero +" Tipo: "+ tipoDeConta + " Cliente: " + cliente.getNome()+ " Saldo: R$" + saldo);
     }
     public int getNumero() {
         return numero;
